@@ -1,4 +1,4 @@
-FROM ubi8/ruby-27
+FROM registry.access.redhat.com/ubi8/ruby-27:1-65
 
 RUN gem install listen -v 3.0.8
 RUN gem install ascii_binder
