@@ -4,7 +4,7 @@ RUN gem install listen -v 3.0.8
 RUN gem install ascii_binder
 RUN asciibinder --version
 USER root
-RUN yum install -y java-1.7.0-openjdk && \
+RUN yum install java-1.7.0-openjdk-devel && \
     yum clean all
 
 LABEL url="http://www.asciibinder.org" \
