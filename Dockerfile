@@ -1,4 +1,4 @@
-FROM ubi8/ruby-27
+FROM centos/ruby-27-centos7
 
 RUN scl enable rh-ruby27 -- gem install listen -v 3.0.8
 RUN scl enable rh-ruby27 -- gem install ascii_binder
