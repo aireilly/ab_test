@@ -13,4 +13,3 @@ To build a specfic distro, for example, `openshift-enterprise` run:
 ```
 podman run --rm -it -v `pwd`:/docs:Z quay.io/rhn_support_aireilly/ab_test asciibinder build -d openshift-enterprise
 ```
-
