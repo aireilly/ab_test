@@ -8,10 +8,11 @@ RUN yum clean all
 
 LABEL url="http://www.asciibinder.org" \
       summary="a documentation system built on Asciidoctor" \
-      description="Run this asciibinder container image from the local doc repo, which is mounted into the container. Generated files are owned by root." \
+      description="Run this asciibinder container image from the local doc repo, which is mounted into the container. Pass asciibinder commands to run the build. Generated files are owned by root." \
       RUN="docker run -it --rm \
           -v `pwd`:/docs:z \
           IMAGE"
 
 ENV LANG=en_US.UTF-8
 WORKDIR /docs
+RUN asciibinder build
