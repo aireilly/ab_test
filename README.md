@@ -14,11 +14,3 @@ To build a specfic distro, for example, `openshift-enterprise` run:
 podman run --rm -it -v `pwd`:/docs:Z quay.io/rhn_support_aireilly/ab_test asciibinder build -d openshift-enterprise
 ```
 
-To watch source files and build changes to the output folder, first run a complete build, and then run:
-
-```
-podman run --rm -it -v `pwd`:/docs:Z quay.io/rhn_support_aireilly/ab_test asciibinder watch
-```
-
-**Note:** Type `exit` to quit the watched build.
-
