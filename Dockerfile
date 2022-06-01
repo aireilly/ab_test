@@ -15,4 +15,3 @@ LABEL url="http://www.asciibinder.org" \
 
 ENV LANG=en_US.UTF-8
 WORKDIR /docs
-RUN asciibinder build
